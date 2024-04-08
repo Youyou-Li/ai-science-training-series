@@ -1,0 +1,5 @@
+[2024-04-08 20:29:18,781][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 7
+[2024-04-08 20:29:18,784][torch.distributed.distributed_c10d][INFO] - Rank 7: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[2024-04-08 20:29:21,088][ezpz.dist][INFO] - [device='cuda'][rank=4/7][local_rank=0/3][node=0/1]
+[2024-04-08 20:29:21,296][wordplay.trainer][INFO] - Initializing a new model from scratch
+[2024-04-08 20:29:21,435][wordplay.trainer][CRITICAL] - "devid='cuda:2'"

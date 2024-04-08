@@ -1,0 +1,28 @@
+[2024-04-08 16:39:53,218][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2024-04-08 16:39:53,227][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 8 nodes.
+[2024-04-08 16:39:55,539][ezpz.dist][INFO] - DistInfo={
+    "DEVICE": "cuda",
+    "DEVICE_ID": "c[2024-04-08 16:39:55,729][wordplay.trainer][INFO] - Initializing a new model from scratch
+[2024-04-08 16:39:55,872][wordplay.trainer][CRITICAL] - "devid='cuda:3'"
+STNAME": "x3005c0s25b1n0.hsn.cm.polaris.alcf.anl.gov",
+    "HOSTS": "['x3005c0s25b1n0', 'x3005c0s31b0n0']",
+    "LOCAL_RANK": 0,
+    "MACHINE": "Polaris",
+    "NGPUS": 8,
+    "NODE_ID": 0,
+    "NUM_NODES": 2,
+    "RANK": 0,
+    "SCHEDULER": "PBS",
+    "WORLD_SIZE_IN_USE": 8,
+    "WORLD_SIZE_TOTAL": 8
+}
+[2024-04-08 16:39:55,540][ezpz.dist][INFO] - [0/8] Using device='cuda' with backend='DDP' + 'nccl' for distributed training.
+[2024-04-08 16:39:55,544][ezpz.dist][INFO] - [device='cuda'][rank=0/7][local_rank=0/3][node=0/1]
+[2024-04-08 16:39:55,545][ezpz.dist][WARNING] - Using [8 / 8] available "cuda" devices !!
+[2024-04-08 16:39:55,549][wordplay.configs][INFO] - Loading train from /home/yoyol/wordplay/data/shakespeare_char/train.bin
+[2024-04-08 16:39:55,550][wordplay.configs][INFO] - Loading val from /home/yoyol/wordplay/data/shakespeare_char/val.bin
+[2024-04-08 16:39:55,551][wordplay.configs][INFO] - Tokens per iteration: 131,072
+[2024-04-08 16:39:55,720][wordplay.configs][INFO] - Using self.ptdtype=torch.bfloat16 on self.device_type='cuda'
+[2024-04-08 16:39:55,721][wordplay.configs][INFO] - Initializing a new model from scratch
+[2024-04-08 16:39:55,721][ezpz.dist][INFO] - Setting up wandb from rank: 0
+[2024-04-08 16:39:55,722][ezpz.dist][INFO] - Using: WB PROJECT: WordPlay

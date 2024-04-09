@@ -1136,67 +1136,67 @@ yoyol@sn30-r3-h1:~/ai-science-training-series/07_AITestbeds/Sambanova/bert/04092
 BertLarge.out
 yoyol@sn30-r3-h1:~/ai-science-training-series/07_AITestbeds/Sambanova/bert/040924.15$ vi BertLarge.out 
 
-[info    ]: Input 1: tensor<1x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x1xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1x128xbf16>
-[warning ]: [LinearInputGradInfo] STOC Rounding enabled but the selected template does not support STOC Rounding
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x1xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x1xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1x128xbf16>
-[warning ]: [LinearInputGradInfo] STOC Rounding enabled but the selected template does not support STOC Rounding
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x1xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x1xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1x128xbf16>
-[warning ]: [LinearInputGradInfo] STOC Rounding enabled but the selected template does not support STOC Rounding
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x1xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x1xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1024x128xbf16>
-[info    ]: Input 0: tensor<1024x128xbf16>
-[info    ]: Input 1: tensor<1x128xbf16>
-[info    ]: Lowering to TLIR succeeded.
-[info    ]: Compilation succeeded.
-[info    ]: Mac Compilation succeeded.
--- INSERT --                                                                                                                                                                                        1127,1        Bot
+Model:  BertLarge
+Date:  04/09/24
+Time:  15:25
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Listing...
+sambaflow/focal,focal,now 1.17.7-27 amd64 [installed,upgradable to: 1.18.7-38]
+Machine State Before:
+Platform: DataScale SN30-8
+
+Physical Inventory:
+Component Name                        | Serial Number       | Inventory State | Functional State
+------------------------------------------------------------------------------------------------
+/NODE/XRDU_0/RDU_0                    | 60287B316ABDB895    | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_0/DIMM_A0    | 1F5BCAD             | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_1/DIMM_B0    | 1F5BDD0             | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_2/DIMM_E0    | 1F6CF93             | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_3/DIMM_F0    | 1F6CF2F             | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_4/DIMM_G0    | 1F5BAED             | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_5/DIMM_H0    | 1F5BCA8             | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_6/DIMM_C0    | 1F5BBD0             | Present         | Online
+/NODE/XRDU_0/RDU_0/DDRCH_7/DIMM_D0    | 1F5BBD1             | Present         | Online
+/NODE/XRDU_0/RDU_0/PCIE_0             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/PCIE_1             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/PCIE_2             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/PCIE_3             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/PCIE_4             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/PCIE_5             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_0             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_1             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_2             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_3             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_4             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_5             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_6             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_0/TILE_7             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1                    | 206043316ABDB895    | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_0/DIMM_J0    | 1F6D120             | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_1/DIMM_K0    | 1F6D0FC             | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_2/DIMM_N0    | 1F6CE6C             | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_3/DIMM_P0    | 1F6CE38             | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_4/DIMM_Q0    | 1F5BBC4             | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_5/DIMM_R0    | 1F5BCE3             | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_6/DIMM_L0    | 1F2E05D             | Present         | Online
+/NODE/XRDU_0/RDU_1/DDRCH_7/DIMM_M0    | 1F312FB             | Present         | Online
+/NODE/XRDU_0/RDU_1/PCIE_0             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/PCIE_1             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/PCIE_2             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/PCIE_3             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/PCIE_4             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/PCIE_5             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_0             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_1             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_2             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_3             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_4             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_5             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_6             | N/A                 | Present         | Online
+/NODE/XRDU_0/RDU_1/TILE_7             | N/A                 | Present         | Online
+/NODE/XRDU_0/SW_0                     | N/A                 | Present         | Online
+/NODE/XRDU_0/SW_0/PORT_0              | N/A                 | Present         | Online
+/NODE/XRDU_0/SW_0/PORT_1              | N/A                 | Present         | Online
+                                                                                                                                                                                                    1,1           Top
